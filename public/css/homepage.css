@@ -1,0 +1,85 @@
+h1,h2{
+    font-family: Raleway,sans-serif;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    font-family: Raleway,sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+header h1{
+    font-size: 50px;
+    font-weight: 100;
+    display: inline;
+}
+header h2{
+    font-size: 20px;
+    font-weight: 300;
+    display: inline;
+}
+
+
+div#notice_box{
+    text-align: center;
+    border: solid darkred 1px;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 12px;
+    width: 66%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+div#notice_box p{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+section.info_panel{
+    max-width: 1024px;
+    height: 402px;
+    margin: 0 auto;
+    display: flex;
+}
+section.info_panel div{
+    width: 83%;
+    border: solid red 1px;
+    height: 100%;
+    display: inline-block;
+}
+section.info_panel div h1, .info_panel div p{
+    font-family: Raleway,sans-serif;
+    margin: 20px;
+}
+section.info_panel nav{
+    width: 17%;
+    height: 100%;
+    display: inline-block;
+}
+section.info_panel nav ul{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+section.info_panel nav ul li{
+    border: solid black 1px;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+section.info_panel nav ul li:hover{
+    cursor: pointer;
+    background-color: #199ED8;
+    user-select: none;
+}
+section.info_panel nav ul li h2{
+    margin: 0;
+    padding: 8px;
+}
