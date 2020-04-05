@@ -13,4 +13,5 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/styles.scss', 'public/css')
+   .sass('resources/assets/sass/dev_styles.scss', 'public/css')
    .sass('resources/assets/sass/excel_test.scss', 'public/css');

@@ -20,10 +20,13 @@ Route::group(['domain' => 'kofun.jaa.is'], function() {
     Route::get('/', 'UIController@Kofun');
     
     Route::get('/{page}', 'UIController@Kofun');
-    Route::get('/{page}/{subpage}', 'UIController@Kofun');
-
-    Route::get('/devtest', 'UIController@Dev');
-    Route::get('/devtest/{page}', 'UIController@Dev');
+    /*Route::get('/{page}/{sub}', 'UIController@Kofun');
+    Route::get('/{page}/{sub}/{subsub}', 'UIController@Kofun');
+    Route::get('/{page}/{sub}/{subsub}/{subsub2}', 'UIController@Kofun');
+    Route::get('/{page}/{sub}/{subsub}/{subsub2}/{subsub3}', 'UIController@Kofun');
+    Route::get('/{page}/{sub}/{subsub}/{subsub2}/{subsub3}/{subsub4}', 'UIController@Kofun');*/
+    //Route::get('/devtest', 'UIController@Dev');
+    //Route::get('/devtest/{page}', 'UIController@Dev');
 });
 
 /*

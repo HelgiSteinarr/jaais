@@ -9,44 +9,23 @@
         <meta name="author" content="Helgi Steinarr Júlíusson - Fisedush.com">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
         <script>window.laravel = {csrfToken: '{{csrf_token() }}'} </script>
-
         <link rel="icon" href="/imgs/Austfirsk_logo_notext.jpg" type="image/gif" sizes="16x16">
-        <link rel="stylesheet" href="/css/styles.css">
+        
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <script src="https://npmcdn.com/vue-router@2.0.0/dist/vue-router.js"></script>
+
+        <link rel="stylesheet" href="/css/dev_styles.css">
     </head>
 
     <body>
         <div id="app">
-            <header>
-                <div class="flex_container">
-                    <div class="flex_item">
-                        <a href="https://www.padi.com/" target="_blank">
-                            <img src="/imgs/PADI_logo.jpg"> 
-                        </a>
-                    </div>
-                    <div class="flex_item_mid">
-                        <a href="/">
-                            <img src="/imgs/Austfirsk_logo.jpg">
-                        </a>
-                    </div>
-                    <div class="flex_item_right">
-                        <a href="https://www.mares.com/en-IC/home/" target="_blank">
-                            <img src="/imgs/Mares_logo.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="container">
-                    <navbar></navbar>
-                </div>
-                <hr>
-            </header>
-                <div class="container">
-                    <router-view></router-view>
-                </div>
+            <navbar></navbar>
+            <div class="container">
+                <router-view></router-view>
+            </div>
 
 
             <main>

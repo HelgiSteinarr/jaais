@@ -39,10 +39,6 @@ class UIController extends Controller
         {
             return view("kofun.newhome");
         }
-        if($page == "in_dev/")
-        {
-            return view("kofun.newhome");
-        }
         return view("kofun.home", ["page" => $page]);
 
         /* Old temp view
